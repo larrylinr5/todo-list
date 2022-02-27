@@ -29,7 +29,7 @@ const requestListener = (req, res) => {
   })
 
   //#region 當路徑不是 '/todos' 或 /todos/{{id}} 時 顯示404訊息
-  if(!(['/todos','/'].includes(req.url) || req.url.startsWith('/todos/')) || ['/todos/'].includes(req.url)){
+  if(!(['/todos'].includes(req.url) || req.url.startsWith('/todos/')) || ['/todos/'].includes(req.url)){
       // 預設 404 
       res.writeHead(404, lib.headers);
       res.write(JSON.stringify({
