@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "85d6267f-20d5-4f58-b595-d5508b883e5c",
+		"name": "todolist - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://afternoon-ridge-05017.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"afternoon-ridge-05017",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"代辦事項3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://afternoon-ridge-05017.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"afternoon-ridge-05017",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://afternoon-ridge-05017.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"afternoon-ridge-05017",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://afternoon-ridge-05017.herokuapp.com/todos/445cef87-d712-45ad-b744-be4addb2da44",
+					"protocol": "https",
+					"host": [
+						"afternoon-ridge-05017",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"445cef87-d712-45ad-b744-be4addb2da44"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"代辦事項2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://afternoon-ridge-05017.herokuapp.com/todos/9fb9a27d-f091-4ebe-a3a4-d78c545a08be",
+					"protocol": "https",
+					"host": [
+						"afternoon-ridge-05017",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"9fb9a27d-f091-4ebe-a3a4-d78c545a08be"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
