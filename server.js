@@ -44,7 +44,7 @@ const requestListener = (req, res) => {
   switch(req.method) {
     // GET 取得
     case 'GET':
-      lib.sucessHandle(res,todoList)
+      if (req.url === '/todos') lib.sucessHandle(res,todoList)
     break;
     // POST 新增
     case 'POST':
